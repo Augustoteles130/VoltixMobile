@@ -117,3 +117,71 @@ padding-top: 10px; /*DISTANCIA ENTRE O TEXTO DOS LINKS E A BORDA SUPERIOR DO MEN
     align-items:center; /*ALINHAMENTO VERTICAL DOS ELEMENTOS */
     
 }
+/*CONFIGURANDO A AREA DE OFEFRTAS*/
+.ofertas{
+    padding: 20px; /*DISTANCIA ENTRE O CONTEÚDO DA DIV DE OFERTAS E AS BORDAS DA DIV */
+}
+
+/*CONFIGURANDO O TEXTO DAS OFERTAS*/
+.titulo-ofertas{
+    font-family: poppins, sans-serif; /*FONTE DO TEXTO DAS OFERTAS */
+    display : grid; /*EXIBE OS ELEMENTOS EM grade */
+    grid-template-columns:  2 80% 20%; /*DEFINE O TAMANHO DAS COlUNAS DA GRADE */
+    grid-template-rows: 2 50% 50%; /*DEFINE O TAMANHO DAS LINHAS DA GRADE */
+}
+.titulo-ofertas h2{
+    color:  #0df505; /*COR DO TEXTO DO TITULO DAS OFERTAS */
+    font-size: 24px; /*TAMANHO DA FONTE DO TITULO DAS OFERTAS */
+    grid-column: 1; /*OCUPA A PRIMEIRA COLUNA DA GRADE */
+    grid-row:1; /*OCUPA A PRIMEIRA LINHA DA GRADE */
+    margin: 0; /*REMOVE A MARGEM PADRÃO DO ELEMENTO H2 */
+}
+.titulo-ofertas p{
+    color:#0df505; /*COR DO TEXTO DO SUBTITULO DAS OFERTAS */
+    font-size: 14px; /*TAMANHO DA FONTE DO SUBTITULO DAS OFERTAS */
+    grid-column: 1; /*OCUPA A PRIMEIRA COLUNA DA GRADE */
+    grid-row: 2; /*OCUPA A SEGUNDA LINHA DA GRADE */
+}
+.titulo-ofertas a{
+    text-decoration: none; /*REMOVE O SUBLINHADO DO LINK */
+    color: #0df505; /*COR DO TEXTO DO LINK */
+    font-size: 14px; /*TAMANHO DA FONTE DO LINK */
+    grid-column: 2; /*OCUPA A SEGUNDA COLUNA DA GRADE */
+    grid-row: 2; /*OCUPA A SEGUNDA LINHA DA GRADE */
+    align-self: center; /*ALINHAMENTO VERTICAL DO LINK NA GRADE */
+    padding-left:80%;
+}
+.lista-produtos{
+    display: flex; /*EXIBE OS ELEMENTOS EM LINHA */
+    gap: 20px; /*DISTANCIA ENTRE OS ELEMENTOS */
+    justify-content: space-between; /*DISTRIBUIÇÃO DOS ELEMENTOS COM ESPAÇO ENTRE ELES */
+    font-family: poppins, sans-serif; /*FONTE DOS PRODUTOS */
+    margin-top: 20px; /*MARGEM SUPERIOR DA LISTA DE PRODUTOS */
+}
+.card-produto{
+    width: 10%; /*LARGURA DE CADA CARD DE PRODUTO */
+    height: 50%; /*ALTURA DE CADA CARD DE PRODUTO */
+    background-color: #f9fcfc; /*COR DE FUNDO DE CADA CARD DE PRODUTO */
+    border: 1px solid #ccc; /*BORDA DE CADA CARD DE PRODUTO */
+    border-radius: 10px; /*ARREDONDAMENTO DAS BORDAS DE CADA CARD DE PRODUTO */
+    padding: 10px; /*DISTANCIA ENTRE O CONTEÚDO DE CADA CARD DE PRODUTO E AS BORDAS DO CARD */
+    text-align: center; /*ALINHAMENTO DO TEXTO DE CADA CARD DE PRODUTO */
+}  
+.card-produto img{
+    width: 100%; /*LARGURA DA IMAGEM DE CADA CARD DE PRODUTO */
+    height: auto; /*ALTURA DA IMAGEM DE CADA CARD DE PRODUTO */
+    margin-bottom: 10px; /*MARGEM INFERIOR DA IMAGEM DE CADA CARD DE PRODUTO */
+    border-radius: 10px; /*ARREDONDAMENTO DAS BORDAS DA IMAGEM DE CADA CARD DE PRODUTO */ 
+   
+}.imagem-botao{
+    position: relative; /*POSIÇÃO RELATIVA PARA POSICIONAR O BOTÃO DE FAVORITAR */
+}
+.favorito{
+    position: absolute; /*POSIÇÃO ABSOLUTA PARA POSICIONAR O BOTÃO DE FAVORITAR */
+    border: none;
+    border-radius: 50%; /*ARREDONDAMENTO COMPLETO DO BOTÃO DE FAVORITAR */
+    background-color:#0df505;
+    top: 10px; /*DISTANCIA DO BOTÃO DE FAVORITAR DA BORDA SUPERIOR DA IMAGEM DO PRODUTO */
+    right: 10px; /*DISTANCIA DO BOTÃO DE FAVORITAR DA BORDA DIREITA DA IMAGEM DO PRODUTO */
+    padding: 5px; /*DISTANCIA ENTRE O CONTEÚDO DO BOTÃO DE FAVORITAR E AS BORDAS DO BOTÃO */
+}
