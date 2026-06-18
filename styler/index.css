@@ -176,12 +176,120 @@ padding-top: 10px; /*DISTANCIA ENTRE O TEXTO DOS LINKS E A BORDA SUPERIOR DO MEN
 }.imagem-botao{
     position: relative; /*POSIÇÃO RELATIVA PARA POSICIONAR O BOTÃO DE FAVORITAR */
 }
-.favorito{
+.btn-favoritar{
     position: absolute; /*POSIÇÃO ABSOLUTA PARA POSICIONAR O BOTÃO DE FAVORITAR */
     border: none;
-    border-radius: 50%; /*ARREDONDAMENTO COMPLETO DO BOTÃO DE FAVORITAR */
-    background-color:#0df505;
+    border-radius: 60%; /*ARREDONDAMENTO COMPLETO DO BOTÃO DE FAVORITAR */
+    background-color:transparent;
     top: 10px; /*DISTANCIA DO BOTÃO DE FAVORITAR DA BORDA SUPERIOR DA IMAGEM DO PRODUTO */
     right: 10px; /*DISTANCIA DO BOTÃO DE FAVORITAR DA BORDA DIREITA DA IMAGEM DO PRODUTO */
-    padding: 5px; /*DISTANCIA ENTRE O CONTEÚDO DO BOTÃO DE FAVORITAR E AS BORDAS DO BOTÃO */
+   margin: 0;
+   align-items: center;
+}
+
+.btn-favoritar img{         
+    padding-top: 5px;
+}
+.card-produto h3{
+    font-size: 18px; /*TAMANHO DA FONTE DO NOME DE CADA PRODUTO */
+    font-family: poppins, sans-serif; /*FONTE DO NOME DE CADA PRODUTO */
+    color: #080808; /*COR DO NOME DE CADA PRODUTO */
+    font-style: bold; /*ESTILO DA FONTE DO NOME DE CADA PRODUTO */
+}
+.btn-adicionar{
+    border-radius: 50px; /*ARREDONDAMENTO DAS BORDAS DO BOTÃO DE ADICIONAR AO CARRINHO */
+    background-color: #fffdfd; /*COR DE FUNDO DO BOTÃO DE ADICIONAR AO CARRINHO */
+    border: none;
+    margin-left: 70px; /*MARGEM SUPERIOR DO BOTÃO DE ADICIONAR AO CARRINHO */
+    width: 100px; /*LARGURA DO BOTÃO DE ADICIONAR AO CARRINHO */
+    height: 50px; /*ALTURA DO BOTÃO DE ADICIONAR AO CARRINHO */
+}
+.btn-adicionar img{
+    width: 20px; /*LARGURA DO ICONE DE ADICIONAR AO CARRINHO */
+    padding-top: 5px; /*DISTANCIA ENTRE O ICONE DE ADICIONAR AO CARRINHO E A BORDA SUPERIOR DO BOTÃO DE ADICIONAR AO CARRINHO */
+}
+.precos{
+    display: grid; 
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+
+}
+.p-antigo{
+    grid-column: 1; /*OCUPA A PRIMEIRA COLUNA DA GR/ADE */
+    grid-row: 1; /*OCUPA A PRIMEIRA LINHA DA GRADE */
+
+}
+.p-promocional{
+    grid-column: 2; /*OCUPA A PRIMEIRA COLUNA DA GRADE */
+    grid-row: 1; /*OCUPA A PRIMEIRA LINHA DA GRADE */
+   text-decoration: bold;
+   font-size: 18px;
+   color: #4bf00a;
+   text-align: left;
+}
+.btn-card{
+    display: flex; /*EXIBE OS ELEMENTOS EM LINHA */
+    align-items: center; /*ALINHAMENTO VERTICAL DOS ELEMENTOS */
+    gap: 20px; /*DISTANCIA ENTRE OS ELEMENTOS */
+}
+.btn-card img{
+    
+    width: 20px; /*LARGURA DO ICONE DE AVALIAÇÃO */
+
+}
+.btn-card h5{
+  
+    font-size: 14px;
+}
+.btn-adicionar{
+    grid-column: 3; /*OCUPA A TERCEIRA COLUNA DA GRADE */
+    grid-row: 1; /*OCUPA A PRIMEIRA LINHA DA GRADE */
+}
+/*configuraçoes de rodape */
+footer{
+     background-color: #363d36;
+     color: #09eb41;
+     font-family: poppins,sans-serif;
+     padding: 10px;
+}
+
+.superior{
+    display:flex;
+    gap:20px;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+
+.inferior{
+ display:flex;
+    gap:20px;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    align-items: center;
+    /*alinha os paragrafos no */
+}
+.coluna1,.coluna2,.coluna3,.coluna4{
+    flex:1;/*que cada coluna ocupa 1 espaço na pagina */
+
+}
+.superior h2{
+    font-size: 18px; /* tamanho dos titulos*/
+    font-weight: bold;
+}
+.superior p{
+    font-size: 12px;
+}
+.superior a{
+    color:#0ae90a;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.superior ul{
+    text-decoration: none;
+    list-style: none; 
+    padding: 0px;
+}
+.superior img{
+    width: 24px;
 }
