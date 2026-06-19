@@ -248,7 +248,7 @@ padding-top: 10px; /*DISTANCIA ENTRE O TEXTO DOS LINKS E A BORDA SUPERIOR DO MEN
 /*configuraçoes de rodape */
 footer{
      background-color: #363d36;
-     color: #09eb41;
+     color: #220afd;
      font-family: poppins,sans-serif;
      padding: 10px;
 }
@@ -267,6 +267,7 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     /*alinha os paragrafos no */
+    border-top:#08f008 solid 2px;
 }
 .coluna1,.coluna2,.coluna3,.coluna4{
     flex:1;/*que cada coluna ocupa 1 espaço na pagina */
@@ -280,7 +281,7 @@ footer{
     font-size: 12px;
 }
 .superior a{
-    color:#0ae90a;
+    color:#01e401;
     font-size: 10px;
     text-decoration: none;
 }
@@ -293,3 +294,35 @@ footer{
 .superior img{
     width: 24px;
 }
+
+.coluna3 a img{
+    padding-right: 10px;
+
+}
+/*CONFIGURANDO O PARAGRAFO DO RODAPE IMFERIOR */
+.inferior .links{
+    font-size: 10px;
+    color: #07f5f5;
+    gap: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: #0bf3f3;
+}
+/*comfigurar para que os elementos da pagina preencha toda a tela */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+/*definir que a pagina nao precisa de barra horinzontal */
+body{
+    overflow-x: hidden;
+    width: 100px;
+}
+
+
+
+

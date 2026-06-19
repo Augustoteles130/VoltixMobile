@@ -1,0 +1,108 @@
+
+/*COLOCANDO COR DE FUNDO NO CABEÇALHO*/
+header {
+    background-color: #332C26; /*cor de fundo do cabeçalho */
+    font-family: poppins, sans-serif;/*fonte do cabeçalho */
+    color: #FFFFFF; /*cor do texto do cabeçalho */
+}
+nav a{
+    color: #FFFFFF; /*COR DO TEXTO DO MENU DE NAVEGAÇÃO */
+    text-decoration: none; /*REMOVE O SUBLINHADO DOS LINKS */
+    margin: 0 10px; /*ESPACAMENTO ENTRE OS LINKS */  
+    
+}
+nav{
+text-align: center; /*ALINHAMENTO DO TEXTO DOS LINKS */
+border-color: #FFFFFF; /*COR DA BORDA DO MENU DE NAVEGAÇÃO */
+border-width: 1px; /*LARGURA DA BORDA DO MENU DE NAVEGAÇÃO */
+border-style: solid; /*ESTILO DA BORDA DO MENU DE NAVEGAÇÃO */
+height: 30px; /*ALTURA DO MENU DE NAVEGAÇÃO */
+
+padding-top: 10px; /*DISTANCIA ENTRE O TEXTO DOS LINKS E A BORDA SUPERIOR DO MENU DE NAVEGAÇÃO */
+}
+
+.logo img{
+    height: 80px; /*ALTURA DA LOGO */
+    width: 80px; /*LARGURA DA IMAGEM */
+}
+/*CONFIGURANDO A CAIXA DE PESQUISA*/
+.caixa-pesquisa input{
+    padding: 10px; /*DISTANCIA ENTRE AS BORDAS DO CAMPO DE PESQUISA */
+    border: 1px solid #ccc; /*BORDA DO CAMPO DE PESQUISA */
+    border-radius: 10px; /*ARRENDAMENTO DAS BORDAS DO CAMPO DE PESQUISA */
+    font-family: poppins, sans-serif; /*FONTE DO CAMPO DE PESQUISA */
+    width: 300px; /*LARGURA DO CAMPO DE PESQUISA */
+    height: auto; /*ALTURA DO CAMPO DE PESQUISA */
+    padding-left: 50px;
+}
+/*CONFIGURANDO A DIV DA PESQUISA*/
+.caixa-pesquisa{
+    display: flex; /*EXIBE OS ELEMENTOS EM LINHA */
+    justify-content: center; /*ALINHAMENTO HORIZONTAL DOS ELEMENTOS */
+    margin-top: 10px; /*MARGEM SUPERIOR DA CAIXA DE PESQUISA */
+    margin-bottom: 10px; /*MARGEM INFERIOR DA CAIXA DE PESQUISA */
+    position: relative; /*POSIÇÃO RELATIVA PARA POSICIONAR O ICONE DE PESQUISA */
+}
+
+/*ALINHAR AS DIVS DO CABEÇALHO*/
+.topo {
+    display: flex; /*EXIBE OS ELEMENTOS EM LINHA */
+    align-items: center; /*ALINHAMENTO VERTICAL DOS ELEMENTOS */
+    justify-content: space-between; 
+    /*DISTRIBUIÇÃO DOS ELEMENTOS COM ESPAÇO ENTRE ELES */
+   
+}
+
+/*CONFIGURANDO OS ICONES*/
+.caixa-pesquisa img{
+    height: 20px; /*ALTURA DO ICONE DE PESQUISA */
+    width: 20px; /*LARGURA DO ICONE DE PESQUISA */
+    position: absolute; /*POSIÇÃO ABSOLUTA PARA POSICIONAR O ICONE DE PESQUISA */
+    left: 10px; /*DISTANCIA DO ICONE DE PESQUISA DA BORDA ESQUERDA DO CAMPO DE PESQUISA */
+    top: 50%; /*ALINHAMENTO VERTICAL DO ICONE DE PESQUISA */
+    transform: translateY(-50%); /*CENTRA O ICONE DE PESQUISA VERTICALMENTE */
+}
+.caixa-pesquisa placeholder{
+    padding-left: 30px; 
+    /*DISTANCIA ENTRE O TEXTO DO PLACEHOLDER E O ICONE DE PESQUISA */
+}
+
+.icones a img{
+    height: 30px; /*ALTURA DOS ICONES DE USUÁRIO E CARRINHO */
+    width: 30px; /*LARGURA DOS ICONES DE USUÁRIO E CARRINHO */
+    margin-right: 20px; 
+    /*DISTANCIA ENTRE OS ICONES DE USUÁRIO E CARRINHO AO LADO DIREITO */
+    grid-row: 1 / 3; /*OCUPA AS DUAS LINHAS DA GRADE PARA ALINHAR OS ICONES DE USUÁRIO E CARRINHO VERTICALMENTE */
+
+ 
+}
+
+/*CONFIGURANDO O TEXTO DOS ICONES DE USUÁRIO E CARRINHO*/
+.icones a SMALL{
+    font-size: 10px; /*TAMANHO DA FONTE DO TEXTO PEQUENO */
+    display: block; /*EXIBE O TEXTO EM UMA NOVA LINHA */
+    color: #FFFFFF; /*COR DO TEXTO PEQUENO */
+    grid-column: 2; /*OCUPA A COLUNA AUTOMATICAMENTE PARA ALINHAR O TEXTO DOS ICONES DE USUÁRIO E CARRINHO AO LADO DIREITO */
+    grid-row: 2; /*OCUPA A PRIMEIRA LINHA DA GRADE PARA ALINHAR O TEXTO DOS ICONES DE USUÁRIO E CARRINHO VERTICALMENTE */ 
+     margin:0; /*REMOVE A MARGEM PADRÃO DO ELEMENTO SMALL */
+}
+.icones a p{
+    font-size: 12px; /*TAMANHO DA FONTE DO TEXTO GRANDE */
+    display: block; /*EXIBE O TEXTO EM UMA NOVA LINHA */
+    color: #FFFFFF; /*COR DO TEXTO GRANDE */  
+   
+}
+.icones a{
+    text-decoration: none; /*REMOVE O SUBLINHADO DOS LINKS */
+    display:grid; /*EXIBE OS ELEMENTOS EM LINHA */
+    grid-template-columns: 40px auto;
+    grid-template-rows: auto auto;
+    margin-right: 20px; /*DISTANCIA ENTRE OS ICONES DE USUÁRIO E CARRINHO AO LADO DIREITO */
+}
+/*configurando a div icones*/
+.icones{
+    display: flex;/*EXIBE OS ELEMENTOS EM LINHA */
+    align-items: center;/*ALINHAMENTO VERTICAL DOS ELEMENTOS */
+    gap: 30px;/*DISTANCIA ENTRE OS ELEMENTOS */
+
+}
